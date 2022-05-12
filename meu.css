@@ -212,7 +212,8 @@ h2{
     font-family: "whitb";
     font-size: 30px;
     position: relative;
-    margin-bottom: 2%;
+    text-align: center;
+    margin-top: 1%;
 }
 .produtos{
     border: solid 0.1px rgba(211, 211, 211, 0.411);
@@ -381,6 +382,7 @@ h2{
     background-image: url(zback2.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    background-attachment: fixed;
     background-color: #8AD2E8;
     display: flex;
     justify-content: center;
@@ -418,5 +420,70 @@ h2{
     transition: 0.3s ease;
 }
 .sec4-content a:hover::after{
+    width: 100%;
+}
+.sec5{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.produto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65vw;
+    gap: 1%;
+}
+.produto h4{
+    font-family: "whitb";
+}
+.produto img{
+    width: 50%;
+}
+.item{
+    border-radius: 20px;
+    width: 15vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px rgb(245, 245, 245);
+}
+.precos{
+    width: 100%;
+    display: flex;
+    gap:10%;
+    margin-top: 25%;
+    justify-content: center;
+}
+.preco{
+    color: #121212;
+    text-decoration: line-through;
+}
+.descont{
+    color: #591623;
+}
+.produto a{
+    text-decoration: none;
+    margin-top: 5%;
+    color: #121212;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: max-content;
+}
+.produto a::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    left: 50%;
+    background-color: #121212;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+.produto a:hover::after{
     width: 100%;
 }
