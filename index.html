@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="meu.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>protótipo</title>
 </head>
 <body>
@@ -31,7 +31,7 @@
 
     <!--sec1-->
     <aside>
-        <section class="sec1">
+        <section class="sec1" data-aos="fade-up">
             <div class="linha">
                 <div class="conteudo1">
                     <p>Descrição breve do produto</p>
@@ -88,7 +88,7 @@
         </section>
 
         <!--sec3-->
-        <section class="sec3">
+        <section class="sec3" data-aos="fade-right">
             <div class="of1">
                 <div class="of1-content">
                     <p><i class='bx bxs-offer'></i>oferta imperdível!</p>
@@ -118,7 +118,7 @@
         </section>
 
         <!--sec4-->
-        <section class="sec4">
+        <section class="sec4" data-aos="fade-right">
             <div class="sec4-content">
                 <h4>Saiba primeiro sobre <span>novas ofertas</span><br> seguindo nossas redes sociais</h4>
                 <a href="">Visite</a>
@@ -128,5 +128,11 @@
 
     <video autoplay loop muted src="video.mp4">
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000
+    });
+    </script>
 </body>
 </html>
