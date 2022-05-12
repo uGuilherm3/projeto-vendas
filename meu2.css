@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "whit";
+    border: none;
+}
+@font-face {
+    font-family: "whit";
+    src: url(Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "whitb";
+    src: url(Poppins-ExtraBold.ttf);
+}
+@keyframes back {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+body{
+    background: linear-gradient(45deg,#121212,pink,rgba(255, 67, 67, 0.699),#ffb783);
+    background-size: 500%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: back 10s ease infinite;
+}
+.sec1{
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.sec1 img{
+    width: 50%;
+    height: 60vh;
+    object-fit: cover;
+}
+.form{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+label{
+    font-family: "whitb";
+    font-size: 20px;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+input{
+    padding: 4%;
+}
+input:hover{
+    box-shadow: 0px 0px 5px 5px rgb(243, 243, 243);
+    border-radius: 25px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.btn1{
+    padding: 3% 3%;
+    position: relative;
+    background-color: #ffff;
+    font-family: "whitb";
+}
+.btn1::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #121212;
+    bottom: 2px;
+    left: 0;
+    transition: 0.3s ease;
+}
+.btn1:hover::after{
+    width: 100%;
+}
