@@ -26,7 +26,7 @@
 body{
 }
 header{
-    background-color: #591623;
+    background-color: #ffff;
     height: 10vh;
     width: 100%;
     display: flex;
@@ -34,33 +34,34 @@ header{
     justify-content: space-around;
 }
 #logo{
-    font-size: 500%;
+    font-size: 200px;
     color: #fff;
 }
 nav{
     height: 10vh;
     display: flex;
     justify-content: flex-end;
-    gap: 5%;
+    gap: 50%;
 }
 nav a{
-    color: #fff;
+    color: pink;
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 20%;
 }
 nav i{
-    font-size: 25px;
+    font-size: 35px;
 }
 main{
     height: 90vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+main img{
+    width: 50%;
 }
 video{
     overflow: hidden;
@@ -83,7 +84,7 @@ main h1{
     font-weight: 800;
     font-size: 80px;
     color: transparent;
-    background: linear-gradient(45deg, #fff, #F2CA7E);
+    background: linear-gradient(45deg, #fff, #000000);
     background-size: 400%;
     -webkit-text-stroke: transparent;
     -webkit-background-clip: text;
