@@ -132,41 +132,41 @@ aside{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1%;
+    width: 80vw;
+    margin-left: 10vw;
 }
 .linha{
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
-    background-size: 300%;
     display: flex;
-    width: 26vw;
-    height: 26vh;
+    width: 25vw;
+    height: 30vh;
     background-image: linear-gradient(45deg,#EACAB2 ,#916053);
 }
 .linha2{
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
-    background-size: 300%;
     display: flex;
-    width: 26vw;
-    height: 26vh;
+    width: 25vw;
+    height: 30vh;
     background-image: linear-gradient(45deg,#cdd9d775 ,#A5575A);
 }
 .linha3{
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
-    background-size: 300%;
     display: flex;
-    width: 26vw;
-    height: 26vh;
-    background-image: linear-gradient(45deg,#FDFDFD ,#809A67);
+    width: 25vw;
+    height: 30vh;
+    background-color: #809a6796;
 }
 .sec1 img{
-    width: 50%;
+    width: 60%;
     object-fit: cover;
 }
 .conteudo1{
-    width: 50%;
+    width: 40%;
     padding: 5%;
     color: #121212;
     font-family: Helvetica, sans-serif;
